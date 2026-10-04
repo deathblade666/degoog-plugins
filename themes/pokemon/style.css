@@ -258,6 +258,50 @@
   --success: #27ae60;
 }
 
+/* Haunter Theme (Dark & Light) */
+[data-pokemon-flavor="haunter"][data-theme="dark"] {
+  --bg: #191428;
+  --bg-light: #28203e;
+  --bg-hover: #372d57;
+  --border: #4d3d78;
+  --text-primary: #ecdffc;
+  --text-secondary: #b6a2d9;
+  --text-link: #a78bfa;
+  --text-link-visited: #c084fc;
+  --search-bar-bg: #28203e;
+  --btn-bg: #372d57;
+  --btn-text: #ecdffc;
+  --overlay-bg: rgba(25, 20, 40, 0.85);
+  --primary: #a78bfa;
+  --primary-hover: #c084fc;
+  --primary-rgb: 167, 139, 250;
+  --danger: #f43f5e;
+  --warning: #fbbf24;
+  --success: #34d399;
+}
+
+[data-pokemon-flavor="haunter"][data-theme="light"] {
+  --bg: #f3eefb;
+  --bg-light: #ffffff;
+  --bg-hover: #e3d6f7;
+  --border: #d0bcf4;
+  --text-primary: #2a1f42;
+  --text-secondary: #59467a;
+  --text-link: #7c3aed;
+  --text-link-visited: #6d28d9;
+  --search-bar-bg: #ffffff;
+  --btn-bg: #7c3aed;
+  --btn-text: #ffffff;
+  --theme-pagination-active-bg: #7c3aed;
+  --overlay-bg: rgba(243, 238, 251, 0.95);
+  --primary: #7c3aed;
+  --primary-hover: #6d28d9;
+  --primary-rgb: 124, 58, 237;
+  --danger: #e11d48;
+  --warning: #d97706;
+  --success: #059669;
+}
+
 [data-theme="light"] html {
   background: #f0f0f5 ;
 }
@@ -269,7 +313,8 @@ html {
 [data-pokemon-flavor="pikachu"][data-theme="light"] html,
 [data-pokemon-flavor="bulbasaur"][data-theme="light"] html,
 [data-pokemon-flavor="charmander"][data-theme="light"] html,
-[data-pokemon-flavor="squirtle"][data-theme="light"] html {
+[data-pokemon-flavor="squirtle"][data-theme="light"] html,
+[data-pokemon-flavor="haunter"][data-theme="light"] html {
   background: var(--bg) ;
 }
 
@@ -336,6 +381,20 @@ body::after {
   width: 100px;
   height: 100px;
   background: url("https://play.pokemonshowdown.com/sprites/ani/squirtle.gif") no-repeat center/contain;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+  animation: pokemon-float 4s ease-in-out infinite;
+}
+
+[data-pokemon-flavor="haunter"] body::after {
+  content: "";
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background: url("https://play.pokemonshowdown.com/sprites/ani/haunter.gif") no-repeat center/contain;
   opacity: 0.25;
   pointer-events: none;
   z-index: 0;
