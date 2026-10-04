@@ -1,1 +1,28 @@
-
+{
+  "name": "death's degoog-plugins",
+  "description": "Short description of your collection",
+  "author": "deathblade666",
+  "plugins": [
+    {
+      "path": "plugins/my-plugin",
+      "name": "My Plugin",
+      "description": "What it does",
+      "version": "1.0.0",
+      "type": "command"
+    }
+  ],
+  "themes": [
+    {
+      "path": "themes/pokemon",
+      "name": "pokemon",
+      "description": "fork of the offical pokemon theme but added haunter",
+      "version": "1.0.0"
+    }
+  ],
+  "engines": [],
+  "transports": [],
+  "autocomplete": [],
+  "favicon": [],
+  "shortcuts": [],
+  "repo-image": "logo.png"
+}
