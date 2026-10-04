@@ -258,7 +258,6 @@
   --success: #27ae60;
 }
 
-/* Haunter Theme (Dark & Light) */
 [data-pokemon-flavor="haunter"][data-theme="dark"] {
   --bg: #191428;
   --bg-light: #28203e;
