@@ -1,0 +1,24 @@
+{
+  "name": "Pokemon",
+  "author": "fccview | deathblade666 (added haunter)",
+  "description": "Starter-inspired: Pikachu (yellow), Bulbasaur (green), Charmander (orange), Squirtle (blue), Haunter (Purple).",
+  "css": "style.css",
+  "settingsSchema": [
+    {
+      "key": "flavor",
+      "label": "Flavor",
+      "type": "select",
+      "options": [
+        "pikachu",
+        "bulbasaur",
+        "charmander",
+        "squirtle",
+        "haunter"
+      ],
+      "description": "Pikachu = yellow, Bulbasaur = green, Charmander = orange, Squirtle = blue, Haunter = purple."
+    }
+  ],
+  "dataAttrsFromSettings": {
+    "flavor": "pokemon-flavor"
+  }
+}
