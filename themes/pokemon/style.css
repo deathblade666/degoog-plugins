@@ -532,5 +532,5 @@ body::after {
 }
 
 .degoog-img-sidebar {
-  position: static !important;
+  padding: 3rem !important;
 }
