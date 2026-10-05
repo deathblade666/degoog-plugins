@@ -534,3 +534,10 @@ body::after {
 .degoog-img-sidebar {
   padding-top: 3rem !important;
 }
+
+@media (min-width: 768px) {
+  #media-preview-panel {
+    border-radius: 0 0 16px 16px; /* Matches the results header's bottom-only rounded corners */
+    top: 66px;
+  }
+}
