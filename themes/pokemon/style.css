@@ -413,6 +413,8 @@ body::after {
     background-color: var(--bg) !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+    border-radius: 0 0 16px 16px !important; /* Adjust the 16px to make it more or less rounded */
+    overflow: hidden !important;
 }
 
 #home-logo .logo,
