@@ -537,7 +537,7 @@ body::after {
 
 @media (min-width: 768px) {
   #media-preview-panel {
-    border-radius: 0 0 16px 16px; /* Matches the results header's bottom-only rounded corners */
+    border-radius: 16px;
     top: 66px;
   }
 }
