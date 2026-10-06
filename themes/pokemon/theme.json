@@ -1,6 +1,6 @@
 {
-  "name": "Pokemon + haunter",
-  "author": "fccview | deathblade666 (added haunter)",
+  "name": "Pokemon Now iwth More Pokemons",
+  "author": "fccview | deathblade666",
   "description": "Pikachu (yellow), Bulbasaur (green), Charmander (orange), Squirtle (blue), Haunter (purple), Mew (pink).",
   "css": "style.css",
   "settingsSchema": [
@@ -15,7 +15,8 @@
         "squirtle",
         "haunter",
         "mew",
-        "porygon"
+        "porygon",
+        "spoink"
       ],
       "description": "Pikachu = yellow, Bulbasaur = green, Charmander = orange, Squirtle = blue, Haunter = purple, Mew = pink."
     }

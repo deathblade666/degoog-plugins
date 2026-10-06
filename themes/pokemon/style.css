@@ -344,7 +344,6 @@
   --success: #20c997;
 }
 
-/* Porygon Theme (Digital/Cyber Pink & Blue Palette) */
 [data-pokemon-flavor="porygon"][data-theme="dark"] {
   --bg: #1e1526;
   --bg-light: #2b1f38;
@@ -388,6 +387,49 @@
   --success: #27ae60;
 }
 
+[data-pokemon-flavor="spoink"][data-theme="dark"] {
+  --bg: #241824;
+  --bg-light: #372437;
+  --bg-hover: #4e334e;
+  --border: #664666;
+  --text-primary: #fcecfc;
+  --text-secondary: #d8b8d8;
+  --text-link: #ff79c6;
+  --text-link-visited: #bd93f9;
+  --search-bar-bg: #372437;
+  --btn-bg: #4e334e;
+  --btn-text: #fcecfc;
+  --overlay-bg: rgba(36, 24, 36, 0.85);
+  --primary: #ff79c6;
+  --primary-hover: #ff92d0;
+  --primary-rgb: 255, 121, 198;
+  --danger: #ff5555;
+  --warning: #f1fa8c;
+  --success: #50fa7b;
+}
+
+[data-pokemon-flavor="spoink"][data-theme="light"] {
+  --bg: #fbf0f8;
+  --bg-light: #ffffff;
+  --bg-hover: #f5d6ee;
+  --border: #e6b3dc;
+  --text-primary: #3d1c3a;
+  --text-secondary: #703c6a;
+  --text-link: #c53093;
+  --text-link-visited: #8030c5;
+  --search-bar-bg: #ffffff;
+  --btn-bg: #c53093;
+  --btn-text: #ffffff;
+  --theme-pagination-active-bg: #c53093;
+  --overlay-bg: rgba(251, 240, 248, 0.95);
+  --primary: #c53093;
+  --primary-hover: #db48a9;
+  --primary-rgb: 197, 48, 147;
+  --danger: #c0392b;
+  --warning: #d68910;
+  --success: #27ae60;
+}
+
 [data-theme="light"] html {
   background: #f0f0f5 ;
 }
@@ -402,7 +444,8 @@ html {
 [data-pokemon-flavor="squirtle"][data-theme="light"] html,
 [data-pokemon-flavor="haunter"][data-theme="light"] html,
 [data-pokemon-flavor="mew"][data-theme="light"] html,
-[data-pokemon-flavor="porygon"][data-theme="light"] html {
+[data-pokemon-flavor="porygon"][data-theme="light"] html,
+[data-pokemon-flavor="spoink"][data-theme="light"] html {
   background: var(--bg) ;
 }
 
@@ -511,6 +554,20 @@ body::after {
   width: 100px;
   height: 100px;
   background: url("https://play.pokemonshowdown.com/sprites/ani/porygon.gif") no-repeat center/contain;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+  animation: pokemon-float 4s ease-in-out infinite;
+}
+
+[data-pokemon-flavor="spoink"] body::after {
+  content: "";
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background: url("https://play.pokemonshowdown.com/sprites/ani/spoink.gif") no-repeat center/contain;
   opacity: 0.25;
   pointer-events: none;
   z-index: 0;
