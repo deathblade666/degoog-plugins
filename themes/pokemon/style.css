@@ -344,6 +344,50 @@
   --success: #20c997;
 }
 
+/* Porygon Theme (Digital/Cyber Pink & Blue Palette) */
+[data-pokemon-flavor="porygon"][data-theme="dark"] {
+  --bg: #1e1526;
+  --bg-light: #2b1f38;
+  --bg-hover: #3d2b4f;
+  --border: #52396b;
+  --text-primary: #fce8f8;
+  --text-secondary: #d1a8c9;
+  --text-link: #ff61b4;
+  --text-link-visited: #61b4ff;
+  --search-bar-bg: #2b1f38;
+  --btn-bg: #3d2b4f;
+  --btn-text: #fce8f8;
+  --overlay-bg: rgba(30, 21, 38, 0.85);
+  --primary: #ff61b4;
+  --primary-hover: #ff85c8;
+  --primary-rgb: 255, 97, 180;
+  --danger: #ff4757;
+  --warning: #ffa502;
+  --success: #2ed573;
+}
+
+[data-pokemon-flavor="porygon"][data-theme="light"] {
+  --bg: #faf0f7;
+  --bg-light: #ffffff;
+  --bg-hover: #f2d7ea;
+  --border: #dfadd1;
+  --text-primary: #3d1b32;
+  --text-secondary: #6e3e5f;
+  --text-link: #d92080;
+  --text-link-visited: #1e6fb8;
+  --search-bar-bg: #ffffff;
+  --btn-bg: #d92080;
+  --btn-text: #ffffff;
+  --theme-pagination-active-bg: #d92080;
+  --overlay-bg: rgba(250, 240, 247, 0.95);
+  --primary: #d92080;
+  --primary-hover: #f03a9a;
+  --primary-rgb: 217, 32, 128;
+  --danger: #e74c3c;
+  --warning: #d68910;
+  --success: #27ae60;
+}
+
 [data-theme="light"] html {
   background: #f0f0f5 ;
 }
@@ -357,7 +401,8 @@ html {
 [data-pokemon-flavor="charmander"][data-theme="light"] html,
 [data-pokemon-flavor="squirtle"][data-theme="light"] html,
 [data-pokemon-flavor="haunter"][data-theme="light"] html,
-[data-pokemon-flavor="mew"][data-theme="light"] html {
+[data-pokemon-flavor="mew"][data-theme="light"] html,
+[data-pokemon-flavor="porygon"][data-theme="light"] html {
   background: var(--bg) ;
 }
 
@@ -452,6 +497,20 @@ body::after {
   width: 100px;
   height: 100px;
   background: url("https://play.pokemonshowdown.com/sprites/ani/mew.gif") no-repeat center/contain;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+  animation: pokemon-float 4s ease-in-out infinite;
+}
+
+[data-pokemon-flavor="porygon"] body::after {
+  content: "";
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background: url("https://play.pokemonshowdown.com/sprites/ani/porygon.gif") no-repeat center/contain;
   opacity: 0.25;
   pointer-events: none;
   z-index: 0;

@@ -14,7 +14,8 @@
         "charmander",
         "squirtle",
         "haunter",
-        "mew"
+        "mew",
+        "porygon"
       ],
       "description": "Pikachu = yellow, Bulbasaur = green, Charmander = orange, Squirtle = blue, Haunter = purple, Mew = pink."
     }
