@@ -301,6 +301,49 @@
   --success: #059669;
 }
 
+[data-pokemon-flavor="mew"][data-theme="dark"] {
+  --bg: #241a28;
+  --bg-light: #36263e;
+  --bg-hover: #4d3659;
+  --border: #624873;
+  --text-primary: #f8eafc;
+  --text-secondary: #d4b5e2;
+  --text-link: #ff9cf5;
+  --text-link-visited: #e8b4f8;
+  --search-bar-bg: #36263e;
+  --btn-bg: #4d3659;
+  --btn-text: #f8eafc;
+  --overlay-bg: rgba(36, 26, 40, 0.85);
+  --primary: #ff9cf5;
+  --primary-hover: #ffbbf7;
+  --primary-rgb: 255, 156, 245;
+  --danger: #ff6b8b;
+  --warning: #ffe66d;
+  --success: #70dfb4;
+}
+
+[data-pokemon-flavor="mew"][data-theme="light"] {
+  --bg: #fcf1fa;
+  --bg-light: #ffffff;
+  --bg-hover: #f5dcf0;
+  --border: #e2b4dc;
+  --text-primary: #41203d;
+  --text-secondary: #73486c;
+  --text-link: #d63384;
+  --text-link-visited: #a61e63;
+  --search-bar-bg: #ffffff;
+  --btn-bg: #e056a0;
+  --btn-text: #ffffff;
+  --theme-pagination-active-bg: #e056a0;
+  --overlay-bg: rgba(252, 241, 250, 0.95);
+  --primary: #e056a0;
+  --primary-hover: #f065b2;
+  --primary-rgb: 224, 86, 160;
+  --danger: #dc3545;
+  --warning: #fd7e14;
+  --success: #20c997;
+}
+
 [data-theme="light"] html {
   background: #f0f0f5 ;
 }
@@ -313,7 +356,8 @@ html {
 [data-pokemon-flavor="bulbasaur"][data-theme="light"] html,
 [data-pokemon-flavor="charmander"][data-theme="light"] html,
 [data-pokemon-flavor="squirtle"][data-theme="light"] html,
-[data-pokemon-flavor="haunter"][data-theme="light"] html {
+[data-pokemon-flavor="haunter"][data-theme="light"] html,
+[data-pokemon-flavor="mew"][data-theme="light"] html {
   background: var(--bg) ;
 }
 
@@ -400,6 +444,20 @@ body::after {
   animation: pokemon-float 4s ease-in-out infinite;
 }
 
+[data-pokemon-flavor="mew"] body::after {
+  content: "";
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background: url("https://play.pokemonshowdown.com/sprites/ani/mew.gif") no-repeat center/contain;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+  animation: pokemon-float 4s ease-in-out infinite;
+}
+
 @keyframes pokemon-float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
@@ -413,7 +471,7 @@ body::after {
     background-color: var(--bg) !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
-    border-radius: 0 0 16px 16px !important; /* Adjust the 16px to make it more or less rounded */
+    border-radius: 0 0 16px 16px !important;
     overflow: hidden !important;
 }
 
