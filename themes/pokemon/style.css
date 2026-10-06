@@ -430,6 +430,49 @@
   --success: #27ae60;
 }
 
+[data-pokemon-flavor="vaporeon"][data-theme="dark"] {
+  --bg: #142230;
+  --bg-light: #1e3247;
+  --bg-hover: #2b4563;
+  --border: #3c5f85;
+  --text-primary: #e2f2ff;
+  --text-secondary: #a1c4e6;
+  --text-link: #38bdf8;
+  --text-link-visited: #818cf8;
+  --search-bar-bg: #1e3247;
+  --btn-bg: #2b4563;
+  --btn-text: #e2f2ff;
+  --overlay-bg: rgba(20, 34, 48, 0.85);
+  --primary: #38bdf8;
+  --primary-hover: #56ccf8;
+  --primary-rgb: 56, 189, 248;
+  --danger: #f87171;
+  --warning: #facc15;
+  --success: #34d399;
+}
+
+[data-pokemon-flavor="vaporeon"][data-theme="light"] {
+  --bg: #edf6fd;
+  --bg-light: #ffffff;
+  --bg-hover: #d5eafc;
+  --border: #a4d2f7;
+  --text-primary: #12283d;
+  --text-secondary: #3b5f82;
+  --text-link: #0284c7;
+  --text-link-visited: #4338ca;
+  --search-bar-bg: #ffffff;
+  --btn-bg: #0284c7;
+  --btn-text: #ffffff;
+  --theme-pagination-active-bg: #0284c7;
+  --overlay-bg: rgba(237, 246, 253, 0.95);
+  --primary: #0284c7;
+  --primary-hover: #0369a1;
+  --primary-rgb: 2, 132, 199;
+  --danger: #c0392b;
+  --warning: #d68910;
+  --success: #27ae60;
+}
+
 [data-theme="light"] html {
   background: #f0f0f5 ;
 }
@@ -445,7 +488,8 @@ html {
 [data-pokemon-flavor="haunter"][data-theme="light"] html,
 [data-pokemon-flavor="mew"][data-theme="light"] html,
 [data-pokemon-flavor="porygon"][data-theme="light"] html,
-[data-pokemon-flavor="spoink"][data-theme="light"] html {
+[data-pokemon-flavor="spoink"][data-theme="light"] html,
+[data-pokemon-flavor="vaporeon"][data-theme="light"] html {
   background: var(--bg) ;
 }
 
@@ -568,6 +612,20 @@ body::after {
   width: 100px;
   height: 100px;
   background: url("https://play.pokemonshowdown.com/sprites/ani/spoink.gif") no-repeat center/contain;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+  animation: pokemon-float 4s ease-in-out infinite;
+}
+
+[data-pokemon-flavor="vaporeon"] body::after {
+  content: "";
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background: url("https://play.pokemonshowdown.com/sprites/ani/vaporeon.gif") no-repeat center/contain;
   opacity: 0.25;
   pointer-events: none;
   z-index: 0;

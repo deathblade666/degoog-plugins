@@ -14,9 +14,9 @@
   "themes": [
     {
       "path": "themes/pokemon",
-      "name": "pokemon + haunter",
+      "name": "pokemon: Now with more Pokemons",
       "description": "fork of the offical pokemon theme added more pokemon",
-      "version": "1.0.4"
+      "version": "1.0.5"
     }
   ],
   "engines": [],

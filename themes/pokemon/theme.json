@@ -1,5 +1,5 @@
 {
-  "name": "Pokemon Now iwth More Pokemons",
+  "name": "Pokemon: Now with more Pokemons",
   "author": "fccview | deathblade666",
   "description": "Pikachu (yellow), Bulbasaur (green), Charmander (orange), Squirtle (blue), Haunter (purple), Mew (pink).",
   "css": "style.css",
@@ -16,7 +16,8 @@
         "haunter",
         "mew",
         "porygon",
-        "spoink"
+        "spoink",
+        "vaporeon"
       ],
       "description": "Pikachu = yellow, Bulbasaur = green, Charmander = orange, Squirtle = blue, Haunter = purple, Mew = pink."
     }
